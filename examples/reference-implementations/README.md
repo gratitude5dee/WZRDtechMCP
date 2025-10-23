@@ -309,4 +309,4 @@ See [CONTRIBUTING.md](../../CONTRIBUTING.md) for guidelines.
 
 ---
 
-Built with ❤️ by [Locus](https://paywithlocus.com) (YC F25)
+Built with ❤️ by [WZRD.tech](https://wzrd.tech)

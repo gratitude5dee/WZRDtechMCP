@@ -1,10 +1,10 @@
 
 # Agentic Commerce Protocol (ACP) Demo Implementation
 <p align="center">
-  <a href="https://paywithlocus.com">
-    <img src="docs/locus-logo.png" alt="Locus Logo" width="120"/>
+  <a href="https://wzrd.tech">
+    <img src="docs/wzrd-logo.png" alt="WZRD.tech Logo" width="120"/>
   </a><br/>
-  <em>Built with ❤️ by <a href="https://paywithlocus.com">Locus</a> (YC F25)</em>
+  <em>Built with ❤️ by <a href="https://wzrd.tech">WZRD.tech</a></em>
 </p>
 
 
@@ -28,7 +28,7 @@ To accelerate experimentation, we built the **first working mock implementation*
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/locus-technologies/agentic-commerce-protocol-demo
+   git clone https://github.com/wzrd-tech/agentic-commerce-protocol-demo
    cd agentic-commerce-protocol-demo
    ```
 
@@ -232,8 +232,8 @@ All endpoints defined by the ACP spec adhere to the standard, including required
 
 That said, [ACP repo](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol) is still in `draft`, so details may change. We’ll track updates closely and welcome contributions from the community to keep this implementation in sync!
 
-## About us
-With talent from Scale AI and Coinbase, Locus (YC F25) is building agentic payment infrastructure for the machine economy. We're launching soon. Learn more about us and join our waitlist at [paywithlocus.com](https://paywithlocus.com).
+## About Us
+WZRD.tech is building cutting-edge agentic infrastructure and MCP implementations for the AI economy. Learn more about our work at [wzrd.tech](https://wzrd.tech).
 
 </br>
 

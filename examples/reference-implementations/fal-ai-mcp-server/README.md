@@ -454,7 +454,7 @@ MIT License - see [LICENSE](../../../LICENSE) for details
 
 ## Acknowledgments
 
-- Built with ❤️ by [Locus](https://paywithlocus.com) (YC F25)
+- Built with ❤️ by [WZRD.tech](https://wzrd.tech)
 - Powered by [Fal AI](https://fal.ai)
 - Following the [Agentic Commerce Protocol](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol)
 

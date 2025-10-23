@@ -15,7 +15,7 @@
     "checkout",
     "merchant"
   ],
-  "author": "Locus <info@paywithlocus.com>",
+  "author": "WZRD.tech <hello@wzrd.tech>",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",

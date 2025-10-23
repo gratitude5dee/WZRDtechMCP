@@ -2,14 +2,14 @@
   "name": "agentic-commerce-protocol",
   "version": "1.0.0",
   "description": "Reference implementation of OpenAI's Agentic Commerce Protocol (ACP)",
-  "author": "Locus <info@paywithlocus.com>",
+  "author": "WZRD.tech <hello@wzrd.tech>",
   "contributors": [
     "Eliot Lee"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/locus-technologies/agentic-commerce-protocol-demo"
+    "url": "https://github.com/wzrd-tech/agentic-commerce-protocol-demo"
   },
   "private": true,
   "type": "module",
