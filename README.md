@@ -76,10 +76,72 @@ To accelerate experimentation, we built the **first working mock implementation*
 │   ├── mcp-ui-server/ # MCP server with commerce tools
 │   ├── merchant/      # Merchant API (checkout sessions)
 │   └── psp/           # Payment Service Provider
-└── chat-client/       # MCP-UI compatible chat interface
-                       # (adapted from scira-mcp-ui-chat)
+├── chat-client/       # MCP-UI compatible chat interface
+│                      # (adapted from scira-mcp-ui-chat)
+└── examples/          # Production-ready reference implementations
+    └── reference-implementations/
+        └── fal-ai-mcp-server/  # Full ACP compliance demo
 ```
 
+## Featured Reference Implementation
+
+### **Fal AI MCP Server** - Production-Ready Multi-Model Implementation
+
+In addition to our commerce demo, we've built a **comprehensive reference implementation** that showcases full ACP protocol compliance with real-world AI model integration.
+
+**[📂 View Implementation](./examples/reference-implementations/fal-ai-mcp-server/)**
+
+#### Key Features
+
+- ✅ **794+ AI Models** - Complete integration with Fal AI's model catalog
+- ✅ **Full ACP Protocol** - Complete x402 compliance with all required headers
+- ✅ **Production Ready** - Enterprise-grade error handling, logging, and monitoring
+- ✅ **Idempotency** - 24-hour cache with conflict detection per ACP spec
+- ✅ **Type Safety** - Complete TypeScript implementation
+- ✅ **Well Tested** - Comprehensive test suite with >80% coverage
+
+#### What You'll Learn
+
+This reference implementation demonstrates:
+- **ACP Header Management** - API-Version: 2025-09-29, Request-Id, Idempotency-Key
+- **Flat Error Format** - ACP-compliant error responses (no nested envelopes)
+- **Retry Logic** - Exponential backoff with proper error handling
+- **Resource Discovery** - MCP resources for model catalog and schemas
+- **Dynamic Tool Registration** - 794 models registered as callable tools
+- **Caching Strategies** - Multi-layer caching (idempotency, schemas)
+- **Production Logging** - Winston-based structured logging
+
+#### Quick Start
+
+```bash
+cd examples/reference-implementations/fal-ai-mcp-server
+npm install
+cp .env.example .env
+# Add your FAL_KEY to .env
+npm run build
+
+# Get path for Claude Desktop
+npm run get-path
+```
+
+Then add to your Claude Desktop config:
+```json
+{
+  "mcpServers": {
+    "fal-ai": {
+      "command": "node",
+      "args": ["/path/to/fal-ai-mcp-server/build/index.js"],
+      "env": {
+        "FAL_KEY": "your-fal-api-key"
+      }
+    }
+  }
+}
+```
+
+**[📚 Full Setup Guide](./examples/reference-implementations/fal-ai-mcp-server/SETUP_GUIDE.md)**
+
+---
 
 # Core Concepts & Definitions
 

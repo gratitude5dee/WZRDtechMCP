@@ -1,0 +1,342 @@
+[
+  {
+    "slug": "fal-ai/flux-pro",
+    "name": "FLUX.1 [pro]",
+    "category": "Text-to-Image",
+    "description": "State-of-the-art text-to-image model with exceptional prompt adherence and detail",
+    "pricing": {
+      "display": "$0.05 per image",
+      "value": 0.05,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/flux-pro', { input: { prompt: 'A serene lake at sunset' } });",
+      "python": "result = fal.subscribe('fal-ai/flux-pro', arguments={ 'prompt': 'A serene lake at sunset' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/flux-pro"
+  },
+  {
+    "slug": "fal-ai/flux-pro/v1.1",
+    "name": "FLUX.1 [pro] v1.1",
+    "category": "Text-to-Image",
+    "description": "Enhanced version with improved quality and faster generation",
+    "pricing": {
+      "display": "$0.05 per image",
+      "value": 0.05,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/flux-pro/v1.1', { input: { prompt: 'Cyberpunk city' } });",
+      "python": "result = fal.subscribe('fal-ai/flux-pro/v1.1', arguments={ 'prompt': 'Cyberpunk city' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/flux-pro/v1.1"
+  },
+  {
+    "slug": "fal-ai/flux-pro/kontext",
+    "name": "FLUX.1 Kontext [pro]",
+    "category": "Image-to-Image",
+    "description": "Context-aware image editing with precise control",
+    "pricing": {
+      "display": "$0.05 per image",
+      "value": 0.05,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/flux-pro/kontext', { input: { prompt: 'Add snow', image_url: 'https://...' } });",
+      "python": "result = fal.subscribe('fal-ai/flux-pro/kontext', arguments={ 'prompt': 'Add snow', 'image_url': 'https://...' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/flux-pro/kontext"
+  },
+  {
+    "slug": "fal-ai/stable-diffusion-v3-medium",
+    "name": "Stable Diffusion 3 Medium",
+    "category": "Text-to-Image",
+    "description": "Versatile text-to-image generation with balanced quality and speed",
+    "pricing": {
+      "display": "$0.03 per image",
+      "value": 0.03,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/stable-diffusion-v3-medium', { input: { prompt: 'Abstract art' } });",
+      "python": "result = fal.subscribe('fal-ai/stable-diffusion-v3-medium', arguments={ 'prompt': 'Abstract art' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/stable-diffusion-v3-medium"
+  },
+  {
+    "slug": "fal-ai/luma-dream-machine",
+    "name": "Luma Dream Machine",
+    "category": "Text-to-Video",
+    "description": "Create high-quality videos from text prompts",
+    "pricing": {
+      "display": "$0.10 per video",
+      "value": 0.10,
+      "currency": "USD",
+      "unit": "video"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/luma-dream-machine', { input: { prompt: 'A bird flying' } });",
+      "python": "result = fal.subscribe('fal-ai/luma-dream-machine', arguments={ 'prompt': 'A bird flying' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/luma-dream-machine"
+  },
+  {
+    "slug": "fal-ai/runway-gen3/turbo/image-to-video",
+    "name": "Runway Gen-3 Alpha Turbo (Image to Video)",
+    "category": "Image-to-Video",
+    "description": "Animate images into videos with motion",
+    "pricing": {
+      "display": "$0.08 per video",
+      "value": 0.08,
+      "currency": "USD",
+      "unit": "video"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/runway-gen3/turbo/image-to-video', { input: { image_url: 'https://...', prompt: 'Camera pans right' } });",
+      "python": "result = fal.subscribe('fal-ai/runway-gen3/turbo/image-to-video', arguments={ 'image_url': 'https://...', 'prompt': 'Camera pans right' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/runway-gen3/turbo/image-to-video"
+  },
+  {
+    "slug": "fal-ai/kling-video/v1/standard/text-to-video",
+    "name": "Kling AI Video v1.0 (Text to Video)",
+    "category": "Text-to-Video",
+    "description": "Generate videos from text descriptions",
+    "pricing": {
+      "display": "$0.12 per video",
+      "value": 0.12,
+      "currency": "USD",
+      "unit": "video"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/kling-video/v1/standard/text-to-video', { input: { prompt: 'Waves crashing' } });",
+      "python": "result = fal.subscribe('fal-ai/kling-video/v1/standard/text-to-video', arguments={ 'prompt': 'Waves crashing' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/kling-video/v1/standard/text-to-video"
+  },
+  {
+    "slug": "fal-ai/stable-audio",
+    "name": "Stable Audio",
+    "category": "Text-to-Audio",
+    "description": "Generate high-quality audio from text descriptions",
+    "pricing": {
+      "display": "$0.02 per generation",
+      "value": 0.02,
+      "currency": "USD",
+      "unit": "generation"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/stable-audio', { input: { prompt: 'Calm piano music' } });",
+      "python": "result = fal.subscribe('fal-ai/stable-audio', arguments={ 'prompt': 'Calm piano music' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/stable-audio"
+  },
+  {
+    "slug": "fal-ai/wizper",
+    "name": "Wizper",
+    "category": "Speech-to-Text",
+    "description": "Accurate speech recognition and transcription",
+    "pricing": {
+      "display": "$0.01 per minute",
+      "value": 0.01,
+      "currency": "USD",
+      "unit": "minute"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/wizper', { input: { audio_url: 'https://...' } });",
+      "python": "result = fal.subscribe('fal-ai/wizper', arguments={ 'audio_url': 'https://...' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/wizper"
+  },
+  {
+    "slug": "fal-ai/llama-3-2-11b-vision",
+    "name": "Llama 3.2 11B Vision",
+    "category": "Vision",
+    "description": "Vision-language model for image understanding and analysis",
+    "pricing": {
+      "display": "$0.001 per request",
+      "value": 0.001,
+      "currency": "USD",
+      "unit": "request"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/llama-3-2-11b-vision', { input: { image_url: 'https://...', prompt: 'Describe this image' } });",
+      "python": "result = fal.subscribe('fal-ai/llama-3-2-11b-vision', arguments={ 'image_url': 'https://...', 'prompt': 'Describe this image' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/llama-3-2-11b-vision"
+  },
+  {
+    "slug": "fal-ai/stable-cascade",
+    "name": "Stable Cascade",
+    "category": "Text-to-Image",
+    "description": "Efficient image generation with cascaded diffusion",
+    "pricing": {
+      "display": "$0.025 per image",
+      "value": 0.025,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/stable-cascade', { input: { prompt: 'Mountain landscape' } });",
+      "python": "result = fal.subscribe('fal-ai/stable-cascade', arguments={ 'prompt': 'Mountain landscape' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/stable-cascade"
+  },
+  {
+    "slug": "fal-ai/aura-flow",
+    "name": "AuraFlow",
+    "category": "Text-to-Image",
+    "description": "Artistic image generation with unique style",
+    "pricing": {
+      "display": "$0.03 per image",
+      "value": 0.03,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/aura-flow', { input: { prompt: 'Fantasy castle' } });",
+      "python": "result = fal.subscribe('fal-ai/aura-flow', arguments={ 'prompt': 'Fantasy castle' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/aura-flow"
+  },
+  {
+    "slug": "fal-ai/recraft-v3",
+    "name": "Recraft V3",
+    "category": "Text-to-Image",
+    "description": "Professional image generation optimized for design work",
+    "pricing": {
+      "display": "$0.04 per image",
+      "value": 0.04,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/recraft-v3', { input: { prompt: 'Logo design' } });",
+      "python": "result = fal.subscribe('fal-ai/recraft-v3', arguments={ 'prompt': 'Logo design' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/recraft-v3"
+  },
+  {
+    "slug": "fal-ai/face-to-sticker",
+    "name": "Face to Sticker",
+    "category": "Image-to-Image",
+    "description": "Convert face photos into fun stickers",
+    "pricing": {
+      "display": "$0.02 per image",
+      "value": 0.02,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/face-to-sticker', { input: { image_url: 'https://...' } });",
+      "python": "result = fal.subscribe('fal-ai/face-to-sticker', arguments={ 'image_url': 'https://...' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/face-to-sticker"
+  },
+  {
+    "slug": "fal-ai/pulid",
+    "name": "PuLID",
+    "category": "Image-to-Image",
+    "description": "Identity-preserving image generation",
+    "pricing": {
+      "display": "$0.03 per image",
+      "value": 0.03,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/pulid', { input: { prompt: 'Professional headshot', image_url: 'https://...' } });",
+      "python": "result = fal.subscribe('fal-ai/pulid', arguments={ 'prompt': 'Professional headshot', 'image_url': 'https://...' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/pulid"
+  },
+  {
+    "slug": "fal-ai/tripo-sr",
+    "name": "TripoSR",
+    "category": "Image-to-3D",
+    "description": "Generate 3D models from single images",
+    "pricing": {
+      "display": "$0.05 per model",
+      "value": 0.05,
+      "currency": "USD",
+      "unit": "model"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/tripo-sr', { input: { image_url: 'https://...' } });",
+      "python": "result = fal.subscribe('fal-ai/tripo-sr', arguments={ 'image_url': 'https://...' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/tripo-sr"
+  },
+  {
+    "slug": "fal-ai/fast-sdxl",
+    "name": "Fast SDXL",
+    "category": "Text-to-Image",
+    "description": "Fast SDXL image generation with optimized inference",
+    "pricing": {
+      "display": "$0.02 per image",
+      "value": 0.02,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/fast-sdxl', { input: { prompt: 'Quick sketch' } });",
+      "python": "result = fal.subscribe('fal-ai/fast-sdxl', arguments={ 'prompt': 'Quick sketch' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/fast-sdxl"
+  },
+  {
+    "slug": "fal-ai/flux-lora",
+    "name": "FLUX LoRA",
+    "category": "Text-to-Image",
+    "description": "FLUX with custom LoRA support for fine-tuned styles",
+    "pricing": {
+      "display": "$0.04 per image",
+      "value": 0.04,
+      "currency": "USD",
+      "unit": "image"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/flux-lora', { input: { prompt: 'Custom style', lora_url: 'https://...' } });",
+      "python": "result = fal.subscribe('fal-ai/flux-lora', arguments={ 'prompt': 'Custom style', 'lora_url': 'https://...' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/flux-lora"
+  },
+  {
+    "slug": "fal-ai/minimax-video",
+    "name": "MiniMax Video",
+    "category": "Text-to-Video",
+    "description": "High-quality video generation from text",
+    "pricing": {
+      "display": "$0.15 per video",
+      "value": 0.15,
+      "currency": "USD",
+      "unit": "video"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/minimax-video', { input: { prompt: 'Time-lapse of city' } });",
+      "python": "result = fal.subscribe('fal-ai/minimax-video', arguments={ 'prompt': 'Time-lapse of city' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/minimax-video"
+  },
+  {
+    "slug": "fal-ai/mochi-v1",
+    "name": "Mochi v1",
+    "category": "Text-to-Video",
+    "description": "Open-source video generation model",
+    "pricing": {
+      "display": "$0.08 per video",
+      "value": 0.08,
+      "currency": "USD",
+      "unit": "video"
+    },
+    "examples": {
+      "javascript": "const result = await fal.subscribe('fal-ai/mochi-v1', { input: { prompt: 'Dancing animation' } });",
+      "python": "result = fal.subscribe('fal-ai/mochi-v1', arguments={ 'prompt': 'Dancing animation' })"
+    },
+    "url": "https://fal.ai/models/fal-ai/mochi-v1"
+  }
+]
