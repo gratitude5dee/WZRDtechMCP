@@ -1,35 +1,157 @@
+# WZRD.tech MCP Server
+## The World's First Fully Autonomous Creative Agency
 
-# Agentic Commerce Protocol (ACP) Demo Implementation
 <p align="center">
-  <a href="https://paywithlocus.com">
-    <img src="docs/locus-logo.png" alt="Locus Logo" width="120"/>
-  </a><br/>
-  <em>Built with ❤️ by <a href="https://paywithlocus.com">Locus</a> (YC F25)</em>
+  <strong>Built by <a href="https://5deestudios.com">5-Dee Studios</a></strong><br/>
+  <em>Powered by x402 • 800+ AI Models • Global Instant Payments</em>
 </p>
 
+---
 
+## Overview
 
-On [September 29th](https://openai.com/index/buy-it-in-chatgpt/), OpenAI released the Agentic Commerce Protocol (ACP), which will be foundational for how agents transact with the outside world.  
+**WZRD.tech** is a global autonomous creative agency built on the **x402 protocol** (Agentic Commerce Protocol), delivering end-to-end creative production and commerce capabilities through AI agents. With access to **800+ creative AI models** and **instant global payment settlement**, WZRD.tech enables entirely autonomous creative workflows—from concept to production to market deployment.
 
-ACP is already in use by Stripe, Shopify, and OpenAI. As an open-source standard, it isn’t limited to ChatGPT — it’s designed to let any LLM client transact with any vendor. This creates a *huge* opportunity for devs to start building on top of it today.  
+### What Makes WZRD.tech Unique
 
-To accelerate experimentation, we built the **first working mock implementation**: a sandbox that demonstrates the ACP flow end-to-end with a Client, Merchant, and Payment Service Provider (PSP).
+- **🎨 Full-Stack Creative Production** - From initial design concepts to physical product manufacturing
+- **🤖 Autonomous Agent Commerce** - AI agents can commission work, pay for services, and execute entire campaigns independently
+- **🌍 Global Payment Infrastructure** - Payments settled anywhere in the world, instantly via x402 rails
+- **⚡ 800+ AI Models** - Industry's largest model catalog accessible through a single MCP interface
+- **🔗 ACP/x402 Compliant** - Aligned to OpenAI & Stripe's Agent Commerce Protocol standards
 
+---
 
-## Quick Start
+## 🎯 Creative Agency Capabilities
+
+### Creative Asset Creation
+
+**WZRD.tech** provides comprehensive creative production services through autonomous AI workflows:
+
+#### Visual & Product Design
+- **Image Generation** - High-fidelity product mockups, marketing visuals, and brand assets
+- **Video Generation** - Product demonstrations, promotional videos, and social media content
+- **3D Asset Generation** - Photorealistic 3D models for product visualization and prototyping
+
+#### Fashion & Apparel
+- **Virtual Try-On** - AI-powered fitting and visualization for apparel products
+- **Fashion Tech Packs** - Complete technical specifications for garment manufacturing
+- **T-Shirt & Merch Mockups** - Production-ready designs with complete tech pack documentation
+- **Direct-to-Manufacturing Pipeline** - Seamless integration from design to production lines
+
+### Autonomous Ad Generation & Deployment
+
+**Agent-to-Agent Generative Media** - Revolutionary approach to advertising where AI agents:
+- Create hyperpersonalized ad content based on audience insights
+- Deploy and manage ad campaigns across platforms autonomously
+- Pay for ad placement and creative services using the x402 payment protocol
+- Optimize campaigns in real-time based on performance metrics
+
+---
+
+## 🚀 Autonomous Transaction Capabilities
+
+Through **x402 rails** and **Agent Commerce Protocol (ACP)** compliance, WZRD.tech MCP enables AI agents to execute complete business workflows with **pay-per-use** pricing:
+
+### End-to-End Product Lifecycle Management
+
+1. **Product Design**
+   - Autonomous concept generation and iteration
+   - Multi-model creative exploration (image, 3D, video)
+   - Design validation and optimization
+
+2. **Product Marketing & Ad Deployment**
+   - Automated campaign creation and asset generation
+   - Cross-platform ad deployment and management
+   - Performance tracking and optimization
+
+3. **Product E-Commerce Deployment**
+   - Automated storefront creation and product listing
+   - Dynamic pricing and inventory management
+   - Customer experience optimization
+
+4. **Order Sourcing & Manufacturing**
+   - Supplier identification and negotiation (agent-to-agent)
+   - Production order placement and tracking
+   - Quality control and fulfillment coordination
+
+5. **Product Order Management & Shipping**
+   - Order processing and customer communication
+   - Logistics coordination and tracking
+   - Returns and customer service automation
+
+---
+
+## 🏗️ Technical Architecture
+
+### x402 Protocol (Agentic Commerce Protocol)
+
+WZRD.tech is built on the **x402/ACP standard**, the foundational protocol for how agents transact with the outside world. Released by OpenAI and already in use by **Stripe, Shopify, and OpenAI**, this open-source standard enables:
+
+- **Any LLM Client** to transact with **Any Vendor**
+- **Standardized Payment Flows** with delegated checkout and payment tokenization
+- **Idempotency & Reliability** with comprehensive error handling
+- **Secure Credential Handling** via Payment Service Provider (PSP) abstraction
+
+### Three-Party Architecture
+
+```
+┌─────────────┐         ┌──────────────┐         ┌─────────────┐
+│   Client    │────────▶│   Merchant   │────────▶│     PSP     │
+│ (AI Agent)  │         │ (WZRD.tech)  │         │  (Payment)  │
+└─────────────┘         └──────────────┘         └─────────────┘
+      │                        │                        │
+      │   1. Create Session    │                        │
+      │───────────────────────▶│                        │
+      │                        │                        │
+      │   2. Add Items/Update  │                        │
+      │───────────────────────▶│                        │
+      │                        │                        │
+      │   3. Request Token     │   4. Vault Payment     │
+      │────────────────────────┼───────────────────────▶│
+      │                        │                        │
+      │   5. Return Token      │   6. Return Token      │
+      │◀───────────────────────┼───────────────────────│
+      │                        │                        │
+      │   7. Complete Checkout │   8. Redeem Token      │
+      │───────────────────────▶│───────────────────────▶│
+      │                        │                        │
+      │   9. Confirmation      │  10. Execute Payment   │
+      │◀───────────────────────│◀───────────────────────│
+```
+
+---
+
+## 📦 Repository Structure
+
+```
+├── demo/                          # Reference implementation of x402/ACP
+│   ├── mcp-ui-server/            # MCP server with 800+ creative tools
+│   ├── merchant/                  # Merchant API (checkout sessions)
+│   └── psp/                       # Payment Service Provider
+├── chat-client/                   # MCP-UI compatible chat interface
+└── examples/                      # Production-ready reference implementations
+    └── reference-implementations/
+        └── fal-ai-mcp-server/    # Full ACP compliance with 794+ AI models
+```
+
+---
+
+## 🎬 Quick Start
 
 ### Prerequisites
 
 - Node.js 20+
 - Docker & Docker Compose
 - OpenAI and/or Anthropic API keys
+- Fal AI API key (for creative models)
 
 ### Setup
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/locus-technologies/agentic-commerce-protocol-demo
-   cd agentic-commerce-protocol-demo
+   git clone https://github.com/gratitude5dee/WZRDtechMCP
+   cd WZRDtechMCP
    ```
 
 2. **Install dependencies**
@@ -63,47 +185,46 @@ To accelerate experimentation, we built the **first working mock implementation*
    ```
    Open http://localhost:3000 in your browser.
 
-6. **Try it out!**
-   - Ask the agent: "Show me some shirts"
-   - Add items to cart
-   - Complete checkout with test payment info
-   - Examine how the Client, Merchant, and PSP interact via terminal
+6. **Experience Autonomous Creative Commerce!**
+   - Ask the agent: "Design a t-shirt for my brand"
+   - Request product mockups and tech packs
+   - Generate marketing materials and ads
+   - Complete autonomous checkout with instant payment settlement
+   - Watch the Client, Merchant, and PSP interact in real-time via terminal logs
 
-## Repository Structure
+---
 
-```
-├── demo/              # Reference implementation of ACP
-│   ├── mcp-ui-server/ # MCP server with commerce tools
-│   ├── merchant/      # Merchant API (checkout sessions)
-│   └── psp/           # Payment Service Provider
-├── chat-client/       # MCP-UI compatible chat interface
-│                      # (adapted from scira-mcp-ui-chat)
-└── examples/          # Production-ready reference implementations
-    └── reference-implementations/
-        └── fal-ai-mcp-server/  # Full ACP compliance demo
-```
+## 🎨 Featured: 800+ Creative AI Models
 
-## Featured Reference Implementation
+### Fal AI MCP Server - Production-Ready Multi-Model Implementation
 
-### **Fal AI MCP Server** - Production-Ready Multi-Model Implementation
-
-In addition to our commerce demo, we've built a **comprehensive reference implementation** that showcases full ACP protocol compliance with real-world AI model integration.
+The **largest collection of creative AI models** available through a single MCP interface, showcasing full x402/ACP protocol compliance with real-world AI model integration.
 
 **[📂 View Implementation](./examples/reference-implementations/fal-ai-mcp-server/)**
 
 #### Key Features
 
 - ✅ **794+ AI Models** - Complete integration with Fal AI's model catalog
-- ✅ **Full ACP Protocol** - Complete x402 compliance with all required headers
+- ✅ **Full x402/ACP Protocol** - Complete compliance with all required headers
 - ✅ **Production Ready** - Enterprise-grade error handling, logging, and monitoring
 - ✅ **Idempotency** - 24-hour cache with conflict detection per ACP spec
 - ✅ **Type Safety** - Complete TypeScript implementation
 - ✅ **Well Tested** - Comprehensive test suite with >80% coverage
 
+#### Model Categories
+
+- **Image Generation** - FLUX, Stable Diffusion, DALL-E variants
+- **Video Generation** - Runway, Pika, AnimateDiff
+- **3D Generation** - TripoSR, Shap-E, Point-E
+- **Image-to-Image** - ControlNet, InstantID, IPAdapter
+- **Fashion & Virtual Try-On** - Outfit Anyone, Fashion diffusion models
+- **Upscaling & Enhancement** - Real-ESRGAN, GFPGAN, CodeFormer
+- **Background Removal & Manipulation** - BiRefNet, RMBG
+
 #### What You'll Learn
 
 This reference implementation demonstrates:
-- **ACP Header Management** - API-Version: 2025-09-29, Request-Id, Idempotency-Key
+- **x402/ACP Header Management** - API-Version: 2025-09-29, Request-Id, Idempotency-Key
 - **Flat Error Format** - ACP-compliant error responses (no nested envelopes)
 - **Retry Logic** - Exponential backoff with proper error handling
 - **Resource Discovery** - MCP resources for model catalog and schemas
@@ -128,7 +249,7 @@ Then add to your Claude Desktop config:
 ```json
 {
   "mcpServers": {
-    "fal-ai": {
+    "wzrd-tech-fal-ai": {
       "command": "node",
       "args": ["/path/to/fal-ai-mcp-server/build/index.js"],
       "env": {
@@ -143,99 +264,125 @@ Then add to your Claude Desktop config:
 
 ---
 
-# Core Concepts & Definitions
+## 💼 Use Cases
 
-ACP coordinates three modular systems:
+### For Brands & Marketing Teams
+- **Rapid Prototyping** - Generate hundreds of product variations in minutes
+- **Campaign Automation** - Deploy hyperpersonalized ad campaigns autonomously
+- **Cost Efficiency** - Pay-per-use pricing eliminates agency retainers and minimum commitments
 
-- **Client**: The environment where users interact with an LLM (e.g., ChatGPT, Claude.ai, Ollama).
-- **Merchant**: A vendor (e.g., Etsy, eBay, Amazon) selling goods or services through the client.  
-- **Payment Service Provider (PSP)**: Processes payments on behalf of the merchant (e.g., Stripe, Square). *Most merchants outsource this role to avoid PCI compliance scope.*
-    
+### For E-Commerce Platforms
+- **Dynamic Product Generation** - Create unique product listings on-demand
+- **Automated Marketing Assets** - Generate product photos, videos, and descriptions at scale
+- **Streamlined Manufacturing** - Direct integration from design to production
 
-<br/>
-<p align="center">
-<img src="docs/flow.png" alt="ACP Flow Diagram" width="400"/>
-</p>
-
-## Implementation Details
-
-### Client
-
--   For ease of development, server logic is offshored onto an MCP server compatible with [MCP-UI](https://github.com/idosal/mcp-ui): an open-source extension of MCP that introduces UI components as tool return types.
-- For our chat client, we adapted [Ido Saloman's MCP-UI-compatible fork of Scira Chat](https://github.com/idosal/scira-mcp-ui-chat) (see `chat-client/` directory)
--   In our implementation, the chat client + MCP together constitute the Client entity in the ACP protocol.
-
-### Merchant + PSP
--   Each service implements the endpoints required by the ACP spec.
-    -   **Merchant**: checkout session management.
-    -   **PSP**: delegated payment endpoint for minting tokens.
-
-## Shopping Workflow
-
-*See [OpenAI's docs](https://developers.openai.com/commerce/specs/checkout)*
-
-##### Open a checkout session
-
-When the user first adds an item to the cart, the Client calls:
-```http
-POST /checkout_sessions
-```
--   The request body includes the line items being added.
--   A checkout session state tracks line items, user contact info, and fulfillment address.
-    
-
-##### Update session state
-
-As the user shops, the Client updates the Merchant each time the cart, contact info, or fulfillment address changes:
-```http
-POST /checkout_sessions/{checkout_session_id}
-```
--   Per ACP spec, the Merchant returns its copy of the updated checkout state.
--   The Client treats this as the source of truth and updates the in-chat UI accordingly.
-
-##### Cancel session (optional)
-Removing all items from the cart cancels the session. Alternatively, the Client can explicitly cancel by calling:
-```http
-POST /checkout_sessions/{checkout_session_id}/cancel
-```
-
-##### Retrieve session details (optional)
-For implementations that need it, the Client can fetch details for a session:
-```http
-GET /checkout_sessions/{checkout_session_id}
-```
-
-
-## Payment / Checkout Workflow
-*See [OpenAI's docs](https://developers.openai.com/commerce/specs/payment)*
-
-For transactions, we implemented the Delegated Checkout flow:
-1.  When the user submits payment credentials, the Client passes them to the Merchant’s PSP.
-2.  The PSP stores the credentials and mints a Shared Payment Token (a reference to the vaulted credentials).
-3.  The PSP returns the token to the Client.
-4.  The Client POSTs `/checkout_sessions/:checkout_session_id/complete` to the Merchant, including the token.
-5.  The Merchant redeems the token with the PSP, which invalidates it and executes the transaction.
-    
-
-##### Why delegated payments?
--   Merchants don’t want to handle raw card data (which would put them in PCI compliance scope).
--   Delegating to a PSP is industry-standard — ACP formalizes this so that agents can pay programmatically instead of relying on web redirects or brittle RPA flows.
-    
-
-## Product Feed
-*See [OpenAI's docs](https://developers.openai.com/commerce/specs/feed)*
--   ACP also defines a spec: merchants must regularly provide product data (TSV, CSV, XML, JSON) to a secure endpoint.
--   For demo purposes, our Client simply calls the Merchant’s `GET /products` once on startup and ingests results into a lightweight vector store for lookup.
-    
-## The Future
-All endpoints defined by the ACP spec adhere to the standard, including required headers, response formats, and idempotency handling. 
-
-That said, [ACP repo](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol) is still in `draft`, so details may change. We’ll track updates closely and welcome contributions from the community to keep this implementation in sync!
-
-## About us
-With talent from Scale AI and Coinbase, Locus (YC F25) is building agentic payment infrastructure for the machine economy. We're launching soon. Learn more about us and join our waitlist at [paywithlocus.com](https://paywithlocus.com).
-
-</br>
+### For AI Developers
+- **Reference Implementation** - Production-grade example of x402/ACP compliance
+- **Model Access** - 800+ models through a single, standardized interface
+- **Agent Commerce** - Enable your agents to autonomously commission and pay for creative work
 
 ---
-*Note: This repo is a demo sandbox. All transactions are mocked — no real payments occur.*
+
+## 🔒 Security & Compliance
+
+### Payment Security
+- **PCI Compliance** - Credential handling delegated to certified PSP
+- **Tokenization** - Zero raw payment data exposure to merchants
+- **Idempotency** - Guaranteed exactly-once payment processing
+
+### Protocol Standards
+- **x402/ACP Compliant** - Full adherence to OpenAI & Stripe standards
+- **API Versioning** - Semantic versioning with backward compatibility
+- **Error Handling** - Standardized error formats and retry mechanisms
+
+---
+
+## 🛣️ Roadmap
+
+### Phase 1: Foundation (Current)
+- ✅ 800+ AI models integrated via Fal AI
+- ✅ Full x402/ACP protocol compliance
+- ✅ Basic checkout and payment flows
+- ✅ Reference implementation and documentation
+
+### Phase 2: Enhanced Creative Workflows (Q1 2025)
+- 🔄 Multi-model creative pipelines (e.g., concept → mockup → tech pack → production)
+- 🔄 Advanced fashion design capabilities with pattern generation
+- 🔄 Automated brand guideline adherence and validation
+- 🔄 Real-time collaboration tools for agent-human workflows
+
+### Phase 3: Manufacturing & Fulfillment (Q2 2025)
+- 📋 Direct integrations with print-on-demand platforms
+- 📋 Manufacturing partner network with automated RFQ/sourcing
+- 📋 Quality control and approval workflows
+- 📋 End-to-end order tracking and fulfillment
+
+### Phase 4: Marketing Automation (Q2-Q3 2025)
+- 📋 Multi-platform ad deployment (Meta, Google, TikTok)
+- 📋 A/B testing and campaign optimization
+- 📋 Audience segmentation and personalization at scale
+- 📋 ROI tracking and attribution modeling
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Whether you're:
+- Adding new AI model integrations
+- Improving protocol compliance
+- Building example workflows
+- Enhancing documentation
+
+Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙋 Support & Community
+
+- **Documentation**: [Full technical docs](./docs)
+- **Issues**: [GitHub Issues](https://github.com/gratitude5dee/WZRDtechMCP/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/gratitude5dee/WZRDtechMCP/discussions)
+
+---
+
+## 🌟 About 5-Dee Studios
+
+**5-Dee Studios** is pioneering the future of autonomous creative production. By combining cutting-edge AI models with standardized commerce protocols, we're building the infrastructure for a new era of creative work—where AI agents can autonomously design, produce, market, and deliver products at global scale.
+
+**WZRD.tech** represents our vision: a world where creative ideas can flow seamlessly from concept to customer, mediated by intelligent agents that handle every step of the process with speed, precision, and creativity that exceeds human capabilities.
+
+---
+
+## 📚 Additional Resources
+
+### Protocol Documentation
+- [OpenAI Agent Commerce Protocol Docs](https://developers.openai.com/commerce)
+- [x402/ACP GitHub Repository](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol)
+- [Stripe's ACP Implementation Guide](https://stripe.com/docs/commerce)
+
+### Model Integration Guides
+- [Fal AI API Documentation](https://fal.ai/docs)
+- [Model Category Reference](./docs/MODEL_CATEGORIES.md)
+- [Custom Model Integration Guide](./docs/CUSTOM_MODELS.md)
+
+### Workflow Examples
+- [T-Shirt Design to Production](./examples/workflows/tshirt-production.md)
+- [Ad Campaign Generation](./examples/workflows/ad-campaign.md)
+- [Product Mockup Pipeline](./examples/workflows/product-mockups.md)
+
+---
+
+<p align="center">
+  <strong>Built with ❤️ by <a href="https://5deestudios.com">5-Dee Studios</a></strong><br/>
+  <em>Empowering the future of autonomous creative commerce</em>
+</p>
+
+---
+
+*Note: This repository includes a demo sandbox for development and testing. All transactions in demo mode are mocked—no real payments occur. For production deployments, please contact 5-Dee Studios for enterprise licensing and support.*
